@@ -11,7 +11,7 @@ public class ARPlacement : MonoBehaviour
 
     public Camera ARCamara;
 
-    public GameObject BattleArenaGameObject;
+    public GameObject ObjectToBePlaced;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class ARPlacement : MonoBehaviour
 
 
     void Start()
-    {
+    { 
         
     }
 
@@ -35,7 +35,7 @@ public class ARPlacement : MonoBehaviour
         {
             Pose hitPose = raycast_Hits[0].pose;
             Vector3 positionToPlaced = hitPose.position;
-            BattleArenaGameObject.transform.position = positionToPlaced;
+           ObjectToBePlaced.transform.position = positionToPlaced;
         }
      }
 }
