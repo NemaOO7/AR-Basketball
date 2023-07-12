@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
+using System;
 
 public class throwball : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class throwball : MonoBehaviour
     public float yforce;
     public float forcemultiplier;
     public AudioSource audioPlayer;
-
+    public int counter = 0;
+    public TextMeshProUGUI scoreText;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +29,12 @@ public class throwball : MonoBehaviour
     
     void RespawnBall()
     {
+      
         rb.velocity = Vector3.zero; // reset the ball's velocity
         rb.angularVelocity = Vector3.zero; // reset the ball's angular velocity
         transform.position = spawnPoint.position; // move the ball back to the spawn point
         isRespawning = false;
+     
 
     }
     // Update is called once per frame

@@ -10,13 +10,13 @@ public class Score : MonoBehaviour
     public float highscore = 0f;
     public TextMeshProUGUI scoreText; // Reference to the UI text object that displays the score
     public TextMeshProUGUI highscoreText;
-    
     public GameObject effectObject;
     public float maxMissedShots = 3f;
     private float missedShots =0f;
     public AudioClip scoreSound;
     public AudioClip bumpSound; 
     public AudioClip miss;
+    public int score1 = 0;
   
 
     void Start()
@@ -64,7 +64,8 @@ public class Score : MonoBehaviour
            PlayerPrefs.SetFloat("highscore", score); 
         }
     }
-
    
-    
+
+
+
 }
