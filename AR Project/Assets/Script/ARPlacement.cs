@@ -7,10 +7,9 @@ using UnityEngine.XR.ARSubsystems;
 public class ARPlacement : MonoBehaviour
 {
     ARRaycastManager m_ARRaycastManager;
-    static List<ARRaycastHit> raycast_Hits = new List<ARRaycastHit>();//sorted by distance
+    static List<ARRaycastHit> raycast_Hits = new List<ARRaycastHit>(); //sorted by distance
 
     public Camera ARCamara;
-
     public GameObject ObjectToBePlaced;
 
     private void Awake()
