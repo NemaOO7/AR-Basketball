@@ -24,7 +24,7 @@ public class ARPlaneDetectionAndPlacementController : MonoBehaviour
         placeButton.SetActive(true);
         adjustButton.SetActive(false); 
         scaleSlider.SetActive(true);
-        informUIPanal_Text.text = "Press Place Button To Place the ring";
+        informUIPanal_Text.text = "Press 'Place' Button To Place the ring";
     }
 
 
@@ -36,7 +36,7 @@ public class ARPlaneDetectionAndPlacementController : MonoBehaviour
         SetAllPlaneActiveteOrDeactivate(false);
         placeButton.SetActive(false);
         adjustButton.SetActive(true);
-        informUIPanal_Text.text = "Great! You placed the Arena. Now , serch for game to Battle!  ";
+        informUIPanal_Text.text = "Great! now you can play the game ";
         scaleSlider.SetActive(false);
     }
 
@@ -49,7 +49,7 @@ public class ARPlaneDetectionAndPlacementController : MonoBehaviour
         SetAllPlaneActiveteOrDeactivate(true);
         placeButton.SetActive(true);
         adjustButton.SetActive(false);
-        informUIPanal_Text.text = "Move phone to detect planes and place the Battle Arena";
+        informUIPanal_Text.text = "Move phone to detect planes and place the Basket Ring";
         scaleSlider.SetActive(true);
     }
     private void SetAllPlaneActiveteOrDeactivate(bool value)
